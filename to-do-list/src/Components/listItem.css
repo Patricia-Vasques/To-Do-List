@@ -1,0 +1,20 @@
+.list-item{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.finalizado{
+    text-decoration: line-through;
+}
+.list-item-button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 15px 15px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    background-color: #e295e9;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}

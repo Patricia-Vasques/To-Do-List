@@ -11,7 +11,7 @@ function App() {
 
  // função para adionar tarefa
 
-function adicionarTarefa(texto){
+function adicionarTarefa(tarefa){
     const novaTarefa = {
         id: setListaDeTarefas.length +1, 
         texto: tarefa,

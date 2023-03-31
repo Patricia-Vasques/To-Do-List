@@ -1,0 +1,32 @@
+.Barra-adicionar{
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 450;
+    font-family: inherit;
+
+}
+.Adicionar{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 20px 20px;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 450;
+    font-family: inherit;
+    background-color: #f1cae2;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.Button-adicionar{
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 450;
+    font-family: inherit;
+    background-color: #e295e9;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}

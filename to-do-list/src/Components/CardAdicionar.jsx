@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import "./cardAdicionar.css"
 
 function CardAdicionar ({adicionarTarefa}) {
     //Criando um useState
@@ -21,13 +22,14 @@ function CardAdicionar ({adicionarTarefa}) {
     }
     
     return(
-    <div>
-        <input type="text" 
-        placeholder="Digite uma tarefa"  
+    <div className = {"Adicionar"} >
+        <input  className = {"Barra-adicionar"} type="text" 
+        placeholder="Adicione uma tarefa"  
         value={tarefa} 
         onChange={(e) => setTarefa(e.target.value)}/>
 
-        <button onClick={handleAdicionar}> Adicionar </button>
+    {/*botão para criar a tarefa*/}
+        <button className={"Button-adicionar"} onClick={handleAdicionar}> Adicionar </button>
     </div>
     );
 }
