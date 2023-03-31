@@ -12,14 +12,25 @@ function ListItem ({tarefa, removerTarefa}) {
         setFinalizada(!finalizada)
     }
 
+    function handleRemoverTarefa (evento) {
+        evento.preventDefault()
+        removerTarefa(tarefa)
+
+    }
+
     return(
         <div>
-            finalizada? (
-                <li key={tarefa.id} className={"list-item-button"}>
-                    {tarefa.texto}
-                    <button className="list-item-button" onClick={finalizarTarefa}>Finalizar</button>
-                    </li>
-            )
+            <li key={tarefa.id} className={"list-item-button"}>
+                {tarefa.texto}
+                <button className="list-item-button" onClick={finalizarTarefa}>Finalizar</button>
+                <button className="list-item-button" onClick={handleRemoverTarefa}>remover</button>
+            </li>
+
+            <li key = {tarefa.id} className={"list-item"}>
+                {tarefa.texto}
+                <button className="list-item-button" onClick={finalizarTarefa}>finalizar</button>
+                <button className="list-item-button" onClick={handleRemoverTarefa}>remover</button>
+            </li>
         </div>
     )
 }

@@ -21,12 +21,18 @@ function adicionarTarefa(texto){
     setListaDeTarefas([...listaDeTarefas, novaTarefa])
 }
 
+function removerTarefa (tarefa) {
+    //remove a tarefa selecionada
+    const novaLista = listaDeTarefas.filter(item=> item.id !=tarefa.id)
+    setListaDeTarefas(novaLista)
+}
+
     return(
         <div className = "App">
             <CardAdicionar adicionarTarefa={adicionarTarefa}/>
         {
         listaDeTarefas.map(tarefa => (
-            <ListItem tarefa = {tarefa} removerTarefa = {removerTaarefa} />
+            <ListItem tarefa = {tarefa} removerTarefa = {removerTarefa} />
         ))
         }
         </div>
