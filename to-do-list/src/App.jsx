@@ -2,10 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import CardAdicionar from './Components/CardAdicionar'
 
+
 function App() {
     //estado base
     const [listaDeTarefas, setListaDeTarefas]= useState([
-        {id: 1, texto: "Tarefa 1", finalizado:false}
+        {id: 1, texto: "Tarefa 1", finalizada:false}
     ])
 
  // função para adionar tarefa
