@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import { Header } from "./components/Header";
 
 export const App = () => {
@@ -5,6 +6,7 @@ export const App = () => {
     <div>
       <Header />
       <main className="container mt-4">
+        <Outlet />
         {/* algo precisa ser modificado aqui... */}
       </main>
     </div>
